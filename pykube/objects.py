@@ -349,7 +349,7 @@ class PetSet(NamespacedAPIObject):
     kind = "PetSet"
 
 
-class StatefulSet(NamespacedAPIObject):
+class StatefulSet(NamespacedAPIObject, ReplicatedMixin, ScalableMixin):
 
     version = "apps/v1beta1"
     endpoint = "statefulsets"
